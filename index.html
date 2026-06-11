@@ -19,11 +19,25 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "BoltCo",
-  "founder": "Elie Boltenhagen",
-  "description": "Dessinateur projeteur AutoCAD indépendant : plans 2D, schémas, synoptiques, dossiers EXE et DOE.",
+  "legalName": "BOLTCO SASU",
+  "founder": {"@type": "Person", "name": "Elie Boltenhagen", "jobTitle": "Dessinateur projeteur AutoCAD"},
+  "description": "Dessinateur projeteur AutoCAD indépendant : plans 2D, schémas électriques, synoptiques, plans d'implantation, dossiers EXE et DOE pour bureaux d'études, architectes et entreprises du BTP.",
   "url": "https://www.boltco.fr",
+  "email": "contact@boltco.fr",
+  "address": {"@type": "PostalAddress", "addressLocality": "Dinsheim-sur-Bruche", "postalCode": "67190", "addressRegion": "Grand Est", "addressCountry": "FR"},
+  "areaServed": [
+    {"@type": "Country", "name": "France"},
+    {"@type": "AdministrativeArea", "name": "Alsace"},
+    {"@type": "City", "name": "Strasbourg"}
+  ],
+  "knowsAbout": ["AutoCAD", "Dessin technique 2D", "Schémas électriques", "Plans d'implantation", "Synoptiques VDI", "Dossiers DOE", "Plans d'exécution EXE"],
+  "makesOffer": [
+    {"@type": "Offer", "name": "Modification de folio existant", "priceSpecification": {"@type": "PriceSpecification", "price": "30", "priceCurrency": "EUR"}},
+    {"@type": "Offer", "name": "Création de schéma sur modèle", "priceSpecification": {"@type": "PriceSpecification", "minPrice": "50", "priceCurrency": "EUR"}},
+    {"@type": "Offer", "name": "Mission longue — suivi d'études EXE à DOE"}
+  ],
   "priceRange": "À partir de 30 € HT",
-  "sameAs": ["https://www.linkedin.com/in/elie-boltenhagen/"]
+  "sameAs": ["https://www.linkedin.com/in/elie-boltenhagen/", "https://www.pappers.fr/entreprise/boltco-922773536"]
 }
 </script>
 <style>
@@ -192,7 +206,7 @@
   <header class="hero">
     <p class="eyebrow">Dessinateur projeteur AutoCAD — Indépendant</p>
     <h1>Vos plans 2D, livrés propres et à l'indice.</h1>
-    <p>BoltCo accompagne bureaux d'études, architectes et entreprises du BTP sur leurs plans, schémas et synoptiques AutoCAD — de la phase étude jusqu'au DOE. Vos chartes graphiques sont respectées, vos délais aussi.</p>
+    <p>BoltCo accompagne bureaux d'études, architectes et entreprises du BTP sur leurs plans, schémas et synoptiques AutoCAD — de la phase étude jusqu'au DOE. Vos chartes graphiques sont respectées, vos délais aussi. Basé en Alsace, près de Strasbourg — intervention à distance dans toute la France.</p>
     <a class="btn" href="#contact">Demander un devis</a>
     <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
 
@@ -303,6 +317,41 @@
     </div>
   </section>
 
+  <p class="divider">PLANCHE 05 — QUESTIONS FRÉQUENTES</p>
+  <section id="faq">
+    <h2><span class="num">05</span>Questions fréquentes</h2>
+    <div style="max-width:680px">
+      <details style="border-bottom:1px solid var(--line);padding:14px 0">
+        <summary style="font-family:var(--cond);text-transform:uppercase;font-size:1.1rem;cursor:pointer">Quels types de plans réalisez-vous ?</summary>
+        <p style="padding-top:10px;color:#3b4046;font-size:.95rem">Plans 2D sur AutoCAD : implantations, cheminements, repérages, schémas électriques unifilaires, synoptiques de réseaux VDI et courants faibles. J'interviens de la phase étude (EXE) jusqu'au dossier des ouvrages exécutés (DOE), avec montée d'indice et bullage à chaque livraison.</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:14px 0">
+        <summary style="font-family:var(--cond);text-transform:uppercase;font-size:1.1rem;cursor:pointer">Combien coûte un dessinateur AutoCAD freelance ?</summary>
+        <p style="padding-top:10px;color:#3b4046;font-size:.95rem">Chez BoltCo : 30 € HT pour la modification d'un folio existant, à partir de 50 € HT pour la création d'un schéma sur la base d'un modèle, et sur devis pour les missions longues. Chiffrage envoyé sous 24 h ouvrées.</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:14px 0">
+        <summary style="font-family:var(--cond);text-transform:uppercase;font-size:1.1rem;cursor:pointer">Travaillez-vous à distance ?</summary>
+        <p style="padding-top:10px;color:#3b4046;font-size:.95rem">Oui, pour des clients dans toute la France : échanges par visioconférence et envois réguliers des livrables. Basé en Alsace près de Strasbourg, je peux aussi me déplacer sur site pour suivre l'évolution d'un chantier.</p>
+      </details>
+      <details style="padding:14px 0">
+        <summary style="font-family:var(--cond);text-transform:uppercase;font-size:1.1rem;cursor:pointer">Comment se passent les corrections ?</summary>
+        <p style="padding-top:10px;color:#3b4046;font-size:.95rem">Chaque livrable est soumis à validation. Les retouches sont effectuées sans surcoût jusqu'à ce que le rendu corresponde exactement au besoin, en respectant vos codes de dessin et chartes graphiques.</p>
+      </details>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Quels types de plans réalisez-vous ?", "acceptedAnswer": {"@type": "Answer", "text": "Plans 2D sur AutoCAD : implantations, cheminements, repérages, schémas électriques unifilaires, synoptiques de réseaux VDI et courants faibles, de la phase EXE jusqu'au DOE, avec montée d'indice et bullage à chaque livraison."}},
+      {"@type": "Question", "name": "Combien coûte un dessinateur AutoCAD freelance ?", "acceptedAnswer": {"@type": "Answer", "text": "Chez BoltCo : 30 € HT pour la modification d'un folio existant, à partir de 50 € HT pour la création d'un schéma sur modèle, et sur devis pour les missions longues. Chiffrage sous 24 h ouvrées."}},
+      {"@type": "Question", "name": "Travaillez-vous à distance ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, pour des clients dans toute la France, par visioconférence et envois réguliers. Basé en Alsace près de Strasbourg, avec déplacements sur site possibles."}},
+      {"@type": "Question", "name": "Comment se passent les corrections ?", "acceptedAnswer": {"@type": "Answer", "text": "Chaque livrable est soumis à validation et les retouches sont effectuées sans surcoût jusqu'à satisfaction, en respectant les codes de dessin et chartes graphiques du client."}}
+    ]
+  }
+  </script>
+
   <section class="contact" id="contact">
     <h2>Un plan à reprendre ? Un projet à suivre ?</h2>
     <p>Décrivez votre besoin en deux lignes, vous recevez une réponse et un chiffrage sous 24 h ouvrées.</p>
@@ -313,7 +362,7 @@
 
   <footer>
     <span>© BoltCo 2026 — Elie Boltenhagen, dessinateur projeteur AutoCAD</span>
-    <a href="mentions-legales.html">Mentions légales &amp; données personnelles</a>
+    <a href="/mentionslegales">Mentions légales &amp; données personnelles</a>
   </footer>
 
 </div>

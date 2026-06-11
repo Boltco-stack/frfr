@@ -1,0 +1,5 @@
+# boltco.fr — tous les robots bienvenus, y compris les crawlers IA
+User-agent: *
+Allow: /
+
+Sitemap: https://www.boltco.fr/sitemap.xml

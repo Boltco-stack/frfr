@@ -1,0 +1,22 @@
+# BoltCo — Dessinateur projeteur AutoCAD freelance
+
+> BoltCo (Elie Boltenhagen) est un dessinateur projeteur AutoCAD indépendant
+> basé en Alsace, près de Strasbourg, intervenant à distance dans toute la France.
+
+## Services
+- Plans 2D AutoCAD : implantations, cheminements, repérages
+- Schémas électriques unifilaires et synoptiques VDI / courants faibles
+- Suivi d'études de l'EXE au DOE : montée d'indice, bullage, reprises MOE/MOA
+
+## Clients types
+Bureaux d'études, architectes, entreprises du BTP (électriciens, métalliers...).
+
+## Tarifs
+- Modification de folio existant : 30 € HT
+- Création de schéma sur modèle : à partir de 50 € HT
+- Mission longue : sur devis — réponse sous 24 h ouvrées
+
+## Contact
+- Email : contact@boltco.fr
+- Site : https://www.boltco.fr
+- LinkedIn : https://www.linkedin.com/in/elie-boltenhagen/
