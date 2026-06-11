@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="monospace">
+  <rect width="800" height="560" fill="#FAFAF7"/>
+  <rect x="14" y="14" width="772" height="532" fill="none" stroke="#1B1E22" stroke-width="2"/>
+  <text x="32" y="44" font-size="15" fill="#1B1E22" font-weight="bold">SCHÉMA UNIFILAIRE — TD-01 LOGEMENT T4</text>
+
+  <!-- Arrivée -->
+  <line x1="90" y1="70" x2="90" y2="110" stroke="#1B1E22" stroke-width="1.6"/>
+  <text x="100" y="80" font-size="10" fill="#1B1E22">ARRIVÉE ENEDIS 230V 60A</text>
+  <!-- Disjoncteur de branchement -->
+  <rect x="74" y="110" width="32" height="44" fill="none" stroke="#1B1E22" stroke-width="1.6"/>
+  <line x1="80" y1="148" x2="100" y2="116" stroke="#1B1E22" stroke-width="1.6"/>
+  <text x="114" y="136" font-size="10" fill="#1B1E22">DB 500mA — 60A sél.</text>
+  <line x1="90" y1="154" x2="90" y2="190" stroke="#1B1E22" stroke-width="1.6"/>
+
+  <!-- Bus principal -->
+  <line x1="90" y1="190" x2="710" y2="190" stroke="#1B1E22" stroke-width="2.4"/>
+  <text x="640" y="182" font-size="9" fill="#6b7077">BUS 230V</text>
+
+  <!-- 3 interrupteurs différentiels -->
+  <g stroke="#1B1E22" stroke-width="1.4" fill="none">
+    <line x1="170" y1="190" x2="170" y2="220"/><rect x="154" y="220" width="32" height="36"/><line x1="160" y1="250" x2="180" y2="226"/>
+    <line x1="410" y1="190" x2="410" y2="220"/><rect x="394" y="220" width="32" height="36"/><line x1="400" y1="250" x2="420" y2="226"/>
+    <line x1="630" y1="190" x2="630" y2="220"/><rect x="614" y="220" width="32" height="36"/><line x1="620" y1="250" x2="640" y2="226"/>
+  </g>
+  <text x="140" y="212" font-size="9" fill="#1B1E22">ID1 40A 30mA AC</text>
+  <text x="380" y="212" font-size="9" fill="#1B1E22">ID2 40A 30mA A</text>
+  <text x="600" y="212" font-size="9" fill="#1B1E22">ID3 63A 30mA A</text>
+
+  <!-- Bus secondaires -->
+  <line x1="80" y1="290" x2="280" y2="290" stroke="#1B1E22" stroke-width="1.8"/>
+  <line x1="170" y1="256" x2="170" y2="290" stroke="#1B1E22" stroke-width="1.4"/>
+  <line x1="320" y1="290" x2="520" y2="290" stroke="#1B1E22" stroke-width="1.8"/>
+  <line x1="410" y1="256" x2="410" y2="290" stroke="#1B1E22" stroke-width="1.4"/>
+  <line x1="560" y1="290" x2="720" y2="290" stroke="#1B1E22" stroke-width="1.8"/>
+  <line x1="630" y1="256" x2="630" y2="290" stroke="#1B1E22" stroke-width="1.4"/>
+
+  <!-- Départs : disjoncteurs -->
+  <g stroke="#1B1E22" stroke-width="1.3" fill="none">
+    <!-- ID1 -->
+    <line x1="110" y1="290" x2="110" y2="318"/><rect x="98" y="318" width="24" height="30"/><line x1="103" y1="343" x2="117" y2="323"/><line x1="110" y1="348" x2="110" y2="380"/>
+    <line x1="180" y1="290" x2="180" y2="318"/><rect x="168" y="318" width="24" height="30"/><line x1="173" y1="343" x2="187" y2="323"/><line x1="180" y1="348" x2="180" y2="380"/>
+    <line x1="250" y1="290" x2="250" y2="318"/><rect x="238" y="318" width="24" height="30"/><line x1="243" y1="343" x2="257" y2="323"/><line x1="250" y1="348" x2="250" y2="380"/>
+    <!-- ID2 -->
+    <line x1="350" y1="290" x2="350" y2="318"/><rect x="338" y="318" width="24" height="30"/><line x1="343" y1="343" x2="357" y2="323"/><line x1="350" y1="348" x2="350" y2="380"/>
+    <line x1="420" y1="290" x2="420" y2="318"/><rect x="408" y="318" width="24" height="30"/><line x1="413" y1="343" x2="427" y2="323"/><line x1="420" y1="348" x2="420" y2="380"/>
+    <line x1="490" y1="290" x2="490" y2="318"/><rect x="478" y="318" width="24" height="30"/><line x1="483" y1="343" x2="497" y2="323"/><line x1="490" y1="348" x2="490" y2="380"/>
+    <!-- ID3 -->
+    <line x1="600" y1="290" x2="600" y2="318"/><rect x="588" y="318" width="24" height="30"/><line x1="593" y1="343" x2="607" y2="323"/><line x1="600" y1="348" x2="600" y2="380"/>
+    <line x1="680" y1="290" x2="680" y2="318"/><rect x="668" y="318" width="24" height="30"/><line x1="673" y1="343" x2="687" y2="323"/><line x1="680" y1="348" x2="680" y2="380"/>
+  </g>
+
+  <!-- Calibres -->
+  <g font-size="8.5" fill="#D9480F">
+    <text x="98" y="312">10A</text><text x="168" y="312">16A</text><text x="238" y="312">16A</text>
+    <text x="338" y="312">10A</text><text x="408" y="312">16A</text><text x="478" y="312">20A</text>
+    <text x="588" y="312">32A</text><text x="668" y="312">20A</text>
+  </g>
+
+  <!-- Libellés circuits (verticaux) -->
+  <g font-size="9" fill="#1B1E22">
+    <text x="110" y="395" transform="rotate(45 110 395)">ÉCLAIRAGE RDC</text>
+    <text x="180" y="395" transform="rotate(45 180 395)">PRISES SÉJOUR</text>
+    <text x="250" y="395" transform="rotate(45 250 395)">PRISES CUISINE</text>
+    <text x="350" y="395" transform="rotate(45 350 395)">ÉCLAIRAGE ÉTAGE</text>
+    <text x="420" y="395" transform="rotate(45 420 395)">PRISES CHAMBRES</text>
+    <text x="490" y="395" transform="rotate(45 490 395)">LAVE-LINGE</text>
+    <text x="600" y="395" transform="rotate(45 600 395)">PLAQUES CUISSON</text>
+    <text x="680" y="395" transform="rotate(45 680 395)">FOUR</text>
+  </g>
+
+  <!-- Cartouche -->
+  <g font-size="9">
+    <rect x="470" y="496" width="316" height="50" fill="#FAFAF7" stroke="#1B1E22" stroke-width="1.6"/>
+    <line x1="470" y1="514" x2="786" y2="514" stroke="#1B1E22"/>
+    <line x1="620" y1="496" x2="620" y2="546" stroke="#1B1E22"/>
+    <line x1="710" y1="496" x2="710" y2="546" stroke="#1B1E22"/>
+    <text x="478" y="509" font-size="8" fill="#6b7077">EXEMPLE — NON CONTRACTUEL</text>
+    <text x="478" y="534" fill="#1B1E22" font-weight="bold">BOLTCO — boltco.fr</text>
+    <text x="628" y="509" fill="#6b7077">DESSINÉ : E.B.</text>
+    <text x="628" y="534" fill="#1B1E22">ÉCH. : S.O.</text>
+    <text x="718" y="509" fill="#6b7077">INDICE : A</text>
+    <text x="718" y="534" fill="#1B1E22">FOLIO 1/1</text>
+  </g>
+</svg>

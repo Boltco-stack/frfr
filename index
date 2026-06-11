@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoltCo — Dessinateur projeteur AutoCAD freelance | Plans, schémas, DOE</title>
+<meta name="description" content="BoltCo — Elie Boltenhagen, dessinateur projeteur AutoCAD indépendant. Plans 2D, schémas électriques, synoptiques, dossiers EXE et DOE pour bureaux d'études, architectes et entreprises du BTP. Devis rapide.">
+<meta name="author" content="Elie Boltenhagen">
+<meta property="og:title" content="BoltCo — Dessinateur projeteur AutoCAD freelance">
+<meta property="og:description" content="Plans 2D, schémas et synoptiques sur AutoCAD. Suivi de vos études de l'EXE au DOE.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.boltco.fr/">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&family=Saira+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "BoltCo",
+  "founder": "Elie Boltenhagen",
+  "description": "Dessinateur projeteur AutoCAD indépendant : plans 2D, schémas, synoptiques, dossiers EXE et DOE.",
+  "url": "https://www.boltco.fr",
+  "priceRange": "À partir de 30 € HT",
+  "sameAs": ["https://www.linkedin.com/in/elie-boltenhagen/"]
+}
+</script>
+<style>
+  :root{
+    --paper:#FAFAF7;
+    --ink:#1B1E22;
+    --line:#C9CCD1;
+    --line-soft:#E4E6E9;
+    --orange:#D9480F;
+    --mono:'IBM Plex Mono',monospace;
+    --sans:'Saira',sans-serif;
+    --cond:'Saira Condensed',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:32px 32px;
+    line-height:1.6;
+    font-size:17px;
+  }
+  a{color:inherit}
+  .sheet{
+    max-width:1080px;
+    margin:24px auto;
+    border:2px solid var(--ink);
+    background:var(--paper);
+    box-shadow:0 0 0 8px var(--paper);
+  }
+  /* ---------- Nav ---------- */
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 24px;border-bottom:2px solid var(--ink);
+    position:sticky;top:0;background:var(--paper);z-index:10;
+  }
+  .logo{font-family:var(--cond);font-weight:700;font-size:1.5rem;letter-spacing:.04em;text-decoration:none}
+  .logo span{color:var(--orange)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav ul a{
+    text-decoration:none;font-family:var(--mono);font-size:.8rem;
+    text-transform:uppercase;letter-spacing:.06em;
+  }
+  nav ul a:hover,nav ul a:focus-visible{color:var(--orange)}
+  :focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+  /* ---------- Hero (planche + cartouche) ---------- */
+  .hero{padding:72px 24px 0;position:relative}
+  .eyebrow{
+    font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--orange);margin-bottom:14px;
+  }
+  h1{
+    font-family:var(--cond);font-weight:700;
+    font-size:clamp(2.4rem,6vw,4.2rem);
+    line-height:1.05;letter-spacing:.01em;text-transform:uppercase;
+    max-width:16ch;
+  }
+  .hero p{max-width:54ch;margin:22px 0 34px;font-size:1.05rem}
+  .btn{
+    display:inline-block;background:var(--orange);color:#fff;
+    font-family:var(--mono);font-size:.9rem;letter-spacing:.05em;
+    text-transform:uppercase;text-decoration:none;
+    padding:14px 26px;border:2px solid var(--ink);
+    box-shadow:4px 4px 0 var(--ink);
+    transition:transform .12s ease,box-shadow .12s ease;
+  }
+  .btn:hover,.btn:focus-visible{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+  .btn-ghost{background:var(--paper);color:var(--ink);margin-left:12px}
+  /* Cartouche (title block) */
+  .cartouche{
+    margin-top:64px;border-top:2px solid var(--ink);
+    display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+    font-family:var(--mono);font-size:.74rem;
+  }
+  .cartouche div{padding:8px 12px;border-right:1px solid var(--ink)}
+  .cartouche div:last-child{border-right:none}
+  .cartouche b{display:block;font-size:.62rem;color:#6b7077;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+  /* ---------- Sections ---------- */
+  section{padding:64px 24px}
+  .divider{
+    display:flex;align-items:center;gap:10px;
+    font-family:var(--mono);font-size:.72rem;color:#6b7077;
+    margin:0 24px;
+  }
+  .divider::before,.divider::after{content:"";flex:1;border-top:1px solid var(--line)}
+  h2{
+    font-family:var(--cond);font-weight:700;text-transform:uppercase;
+    font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:8px;
+  }
+  .num{font-family:var(--mono);color:var(--orange);font-size:1rem;vertical-align:top;margin-right:8px}
+  .lead{max-width:60ch;color:#3b4046;margin-bottom:36px}
+  /* Services */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border:1px solid var(--ink)}
+  .cell{padding:26px 22px;border-right:1px solid var(--ink)}
+  .cell:last-child{border-right:none}
+  .cell h3{font-family:var(--cond);font-size:1.25rem;text-transform:uppercase;margin-bottom:10px}
+  .cell p{font-size:.95rem;color:#3b4046}
+  .tag{font-family:var(--mono);font-size:.7rem;color:var(--orange);letter-spacing:.08em;display:block;margin-bottom:10px}
+  /* Process */
+  ol.steps{list-style:none;counter-reset:s;max-width:680px}
+  ol.steps li{
+    counter-increment:s;padding:20px 0 20px 64px;position:relative;
+    border-bottom:1px solid var(--line);
+  }
+  ol.steps li::before{
+    content:counter(s,decimal-leading-zero);
+    position:absolute;left:0;top:22px;
+    font-family:var(--mono);color:var(--orange);font-size:1rem;
+  }
+  ol.steps h3{font-family:var(--cond);text-transform:uppercase;font-size:1.15rem;margin-bottom:4px}
+  ol.steps p{font-size:.95rem;color:#3b4046}
+  /* Tarifs : nomenclature */
+  table{width:100%;border-collapse:collapse;border:1px solid var(--ink);font-size:.95rem}
+  th{
+    font-family:var(--mono);font-size:.72rem;text-transform:uppercase;
+    letter-spacing:.08em;text-align:left;padding:10px 14px;
+    border-bottom:2px solid var(--ink);background:#F1F1ED;
+  }
+  td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td.prix{font-family:var(--mono);white-space:nowrap;color:var(--orange);font-weight:500}
+  /* Contact */
+  .contact{
+    background:var(--ink);color:var(--paper);
+    border-top:2px solid var(--ink);text-align:center;padding:72px 24px;
+  }
+  .contact h2{color:#fff}
+  .contact p{max-width:50ch;margin:10px auto 30px;color:#C9CCD1}
+  .contact .btn{box-shadow:4px 4px 0 var(--orange);border-color:var(--orange)}
+  .contact a.mail{font-family:var(--mono);color:#fff;display:inline-block;margin-top:22px}
+  footer{
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;
+    padding:16px 24px;font-family:var(--mono);font-size:.72rem;color:#6b7077;
+    border-top:1px solid var(--line);
+  }
+  footer a{color:#6b7077}
+  @media(max-width:720px){
+    nav ul{display:none}
+    .cartouche{grid-template-columns:1fr 1fr}
+    .cartouche div{border-bottom:1px solid var(--ink)}
+    .cell{border-right:none;border-bottom:1px solid var(--ink)}
+    .cell:last-child{border-bottom:none}
+    .btn-ghost{margin-left:0;margin-top:12px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <nav aria-label="Navigation principale">
+    <a class="logo" href="#">BOLT<span>CO</span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#methode">Méthode</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Dessinateur projeteur AutoCAD — Indépendant</p>
+    <h1>Vos plans 2D, livrés propres et à l'indice.</h1>
+    <p>BoltCo accompagne bureaux d'études, architectes et entreprises du BTP sur leurs plans, schémas et synoptiques AutoCAD — de la phase étude jusqu'au DOE. Vos chartes graphiques sont respectées, vos délais aussi.</p>
+    <a class="btn" href="#contact">Demander un devis</a>
+    <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
+
+    <div class="cartouche" aria-hidden="true">
+      <div><b>Affaire</b>BoltCo — boltco.fr</div>
+      <div><b>Dessiné par</b>E. Boltenhagen</div>
+      <div><b>Logiciel</b>AutoCAD 2D</div>
+      <div><b>Indice</b>B — 2026</div>
+    </div>
+  </header>
+
+  <p class="divider">PLANCHE 01 — PRESTATIONS</p>
+  <section id="services">
+    <h2><span class="num">01</span>Une expertise AutoCAD au service de vos projets</h2>
+    <p class="lead">Pour vos projets en cours ou à venir, en renfort ponctuel ou en mission longue.</p>
+    <div class="grid">
+      <div class="cell">
+        <span class="tag">PLN</span>
+        <h3>Plans &amp; folios</h3>
+        <p>Création et mise à jour de plans 2D : implantations, cheminements, repérages. Montée d'indice et bullage des modifications à chaque livraison.</p>
+      </div>
+      <div class="cell">
+        <span class="tag">SCH</span>
+        <h3>Schémas &amp; synoptiques</h3>
+        <p>Schémas électriques, synoptiques de réseaux et architectures techniques, en reprenant vos codes de dessin et vos standards.</p>
+      </div>
+      <div class="cell">
+        <span class="tag">DOE</span>
+        <h3>Suivi EXE &amp; DOE</h3>
+        <p>Accompagnement tout au long du projet : reprises suite aux retours MOE / MOA / chantier, jusqu'au dossier des ouvrages exécutés.</p>
+      </div>
+    </div>
+  </section>
+
+  <p class="divider">PLANCHE 02 — DÉROULEMENT</p>
+  <section id="methode">
+    <h2><span class="num">02</span>Une méthode simple, un suivi régulier</h2>
+    <ol class="steps">
+      <li>
+        <h3>Collecte des informations</h3>
+        <p>Appels et visioconférences tout au long du projet, de la réalisation jusqu'au rendu final. Des journées sur site peuvent être organisées pour suivre l'évolution du chantier et faire le point sur le dossier documentaire.</p>
+      </li>
+      <li>
+        <h3>Envoi des livrables</h3>
+        <p>Envois réguliers de vos documents avec montée d'indice et bullage des modifications, à un rythme défini ensemble pour faire avancer le projet rapidement.</p>
+      </li>
+      <li>
+        <h3>Validation du rendu</h3>
+        <p>Chaque livrable est soumis à votre validation. Les retouches demandées sont effectuées sans surcoût, jusqu'à ce que le rendu corresponde exactement à votre besoin.</p>
+      </li>
+    </ol>
+  </section>
+
+  <p class="divider">PLANCHE 03 — NOMENCLATURE TARIFAIRE</p>
+  <section id="tarifs">
+    <h2><span class="num">03</span>Tarifs</h2>
+    <p class="lead">Des formules claires, adaptées au volume et à la durée de votre besoin. Tarifs HT, sous conditions.</p>
+    <table>
+      <thead>
+        <tr><th>Rep.</th><th>Désignation</th><th>Détail</th><th>Prix</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td><strong>À la page</strong></td>
+          <td>Modification d'un folio existant : reprise, mise à jour, montée d'indice.</td>
+          <td class="prix">30 € HT</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td><strong>Nouveau schéma</strong></td>
+          <td>Création d'un schéma sur la base d'un modèle, en respectant vos codes de dessin et vos standards.</td>
+          <td class="prix">dès 50 € HT</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td><strong>Mission au long cours</strong></td>
+          <td>Suivi de vos études et reprises suite aux retours MOE / MOA / chantier / clients, sur la durée du projet.</td>
+          <td class="prix">Sur devis</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <p class="divider">PLANCHE 04 — EXTRAITS DE RÉALISATIONS</p>
+  <section id="realisations">
+    <h2><span class="num">04</span>Réalisations</h2>
+    <p class="lead">Quelques exemples de planches types. Les documents clients réels sont présentés sur demande, sous réserve de confidentialité.</p>
+    <div class="grid">
+      <div class="cell">
+        <img src="planche-01-unifilaire.svg" alt="Schéma électrique unifilaire d'un tableau de distribution" style="width:100%;border:1px solid var(--line)">
+        <span class="tag" style="margin-top:12px">SCH-EL</span>
+        <h3>Schéma unifilaire</h3>
+        <p>Tableau de distribution : différentiels, départs et calibres, libellés circuits.</p>
+      </div>
+      <div class="cell">
+        <img src="planche-02-implantation.svg" alt="Plan d'implantation électrique d'un plateau de bureaux" style="width:100%;border:1px solid var(--line)">
+        <span class="tag" style="margin-top:12px">IMP</span>
+        <h3>Plan d'implantation</h3>
+        <p>Plateau de bureaux : prises, luminaires, RJ45, cotation et légende.</p>
+      </div>
+      <div class="cell">
+        <img src="planche-03-synoptique.svg" alt="Synoptique VDI courants faibles sur trois niveaux" style="width:100%;border:1px solid var(--line)">
+        <span class="tag" style="margin-top:12px">SYN</span>
+        <h3>Synoptique VDI</h3>
+        <p>Réseau courants faibles : baie de brassage, rocades fibre, distribution capillaire.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Un plan à reprendre ? Un projet à suivre ?</h2>
+    <p>Décrivez votre besoin en deux lignes, vous recevez une réponse et un chiffrage sous 24 h ouvrées.</p>
+    <a class="btn" href="mailto:contact@boltco.fr?subject=Demande%20de%20devis%20—%20BoltCo">Écrire à contact@boltco.fr</a>
+    <br>
+    <a class="mail" href="https://www.linkedin.com/in/elie-boltenhagen/" rel="noopener">→ LinkedIn : Elie Boltenhagen</a>
+  </section>
+
+  <footer>
+    <span>© BoltCo 2026 — Elie Boltenhagen, dessinateur projeteur AutoCAD</span>
+    <a href="/mentionslegales">Mentions légales &amp; données personnelles</a>
+  </footer>
+
+</div>
+</body>
+</html>
